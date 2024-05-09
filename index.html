@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TodoList App</title>
+  <head>
+    <title>TodoList App</title>
+
+  </head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <div class="wrapper">
+        <div id="container">
+            <div id="header">
+                <div id="toDoTabs">
+                    <button class="tabsButton" id="activeButton">Active</button>
+                    <button class="tabsButton" id="completedButton">Completed</button>
+                </div>
+                <div id="taskEntryContainer">
+                    <input type="text" id="taskEntryField" input="" placeholder="Enter a new task...">
+                    <button id="taskEntryButton">Submit</button>
+                    
+                </div>
+                <div id="checkboxCount">Completed tasks: <span id="selectedCount">0</span></div>
+            </div>
+            <div id="mainSection">
+                <div id="toDoListContainer">
+                    <div id="activeTasks">
+                        <ul class="taskList" id="activeTaskList">
+                        </ul>
+                    </div>
+                    <div id="completedTasks">
+                        <ul class="taskList" id="completedTaskList">
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  
+  <script src="java.js"></script>
+
+</body>
+
+</html>

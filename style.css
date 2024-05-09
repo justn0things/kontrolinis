@@ -1,0 +1,114 @@
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: rgb(226, 217, 198);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#container {
+    background-color: #ffe8aa;
+    width: 30%;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    border-radius: 20px;
+}
+
+#header {
+    height: 170px;
+    background-color: rgb(255, 189, 113);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tabsButton {
+    font-size: 1.2em;
+    width: 150px;
+    text-align: center;
+    border-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#taskEntryContainer {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+#taskEntryField {
+    font-size: 1.2em;
+}
+
+#taskEntryButton {
+    margin-left: 50px;
+    font-size: 1.2em;
+}
+
+
+/* Task Lists */
+
+#mainSection {
+    width: 100%;
+}
+
+#toDoListContainer {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.taskList {
+    width: 100%;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.taskList li {
+    width: 86%;
+    display: flex;
+    align-items: baseline;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fce0a4;
+}
+
+.taskList li label {
+    margin-left: 30px;
+    width: 75%;
+}
+
+.taskList button {
+    border-style: none;
+    background-color: #884e4e;
+    font-size: 0.7em;
+    color: white;
+}
+
+
+/* Active Tasks */
+
+#activeTasks {
+    display: block;
+    z-index: 3;
+}
+
+
+/* Completed Tasks */
+
+#completedTasks {
+    display: none;
+    z-index: 3;
+}
